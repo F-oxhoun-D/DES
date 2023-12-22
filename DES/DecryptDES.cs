@@ -41,8 +41,7 @@
                 }
                 Global.binaryBlocksIP[i] = L[0] + R[0];
             }
-            Global.binaryBlocksIP = DES.InitialPermutation1(Global.binaryBlocks);
-            Global.binaryBlocksIP = DES.InitialPermutation(Global.binaryBlocks);
+            Global.binaryBlocksIP = DES.InitialPermutation1(Global.binaryBlocksIP);
             foreach (var i in Global.binaryBlocksIP)
                 Global.outputText += DES.BinaryToStringFormat(i);
         }
